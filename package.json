@@ -1,0 +1,20 @@
+{
+  "name": "slides-react",
+  "version": "0.0.1",
+  "description": "Presentation about React",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ninetails/slides-react.git"
+  },
+  "keywords": [
+    "presentation",
+    "react"
+  ],
+  "author": "Ninetails - Carlos Kazuo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ninetails/slides-react/issues"
+  },
+  "homepage": "https://github.com/ninetails/slides-react#readme"
+}

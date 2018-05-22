@@ -5,10 +5,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<meta name="robots" content="noindex, nofollow, noarchive">
 
-		<title>reveal.js</title>
+		<meta name="author" content="Carlos Kazuo @ninetails">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<title>React</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<!-- <link rel="stylesheet" href="css/theme/black.css"> -->
+		<link rel="stylesheet" href="css/theme/league.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -21,12 +27,59 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+		<!-- Custom -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/brands.css" integrity="sha384-VGCZwiSnlHXYDojsRqeMn3IVvdzTx5JEuHgqZ3bYLCLUBV8rvihHApoA1Aso2TZA" crossorigin="anonymous">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-markdown>
+					# React
+
+					Capa
+				</section>
+
+				<section>
+					<h2>Carlos Kazuo</h2>
+
+					<h3>Veneza</h3>
+
+					<ul style="list-style-type: none;">
+						<li>
+							<svg style="vertical-align: bottom;" enable-background="new 0 0 512 512" height="48px" version="1.1" viewBox="0 0 512 512" width="48px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle cx="255.999" cy="256" r="246.455"/></g><g><circle clip-rule="evenodd" cx="256" cy="256" fill="#FFFFFF" fill-rule="evenodd" r="186.975"/><path clip-rule="evenodd" d="M287.631,372.15c-7.71-14.073-9.873-32.703-4.705-52.966   c8.434-33.083,33.921-60.788,62.387-71.001c16.592,28.224,21.809,61.7,12.577,93.1C338.029,356.988,313.984,367.887,287.631,372.15   L287.631,372.15z" fill-rule="evenodd"/><path clip-rule="evenodd" d="M320.608,396.94c-13.083-2.823-23.606-10.308-30.644-20.919   c24.695-5.074,47.303-15.518,66.416-29.995c-1.154,3.362-2.477,6.696-3.976,9.992C344.952,372.419,333.961,386.185,320.608,396.94   L320.608,396.94z" fill-rule="evenodd"/><path clip-rule="evenodd" d="M379.211,320.704c5.186-26.054,1.937-52.7-8.444-76.683   c16.305,0.615,29.539,7.808,38.317,19.287C403.56,284.689,393.203,304.209,379.211,320.704L379.211,320.704z" fill-rule="evenodd"/><path clip-rule="evenodd" d="M408.647,346.94c-7.903,12.065-17.236,23.112-27.753,32.901   c-15.061,11.844-32.724,18.809-50.014,18.322c-0.105-0.002-0.211-0.009-0.316-0.013c16.42-12.497,30.015-28.856,39.17-48.521   c3.545-7.617,6.27-15.401,8.214-23.262c15.462-16.928,27.139-37.094,33.761-59.294c9.096,14.364,11.973,34.195,6.438,55.901   C416.005,331.379,412.758,339.432,408.647,346.94L408.647,346.94z" fill-rule="evenodd"/><path clip-rule="evenodd" d="M323.898,402.906c0.479,0.021,0.959,0.047,1.441,0.061   c12.391,0.336,24.793-2.436,36.472-7.664c-28.896,20.287-64.097,32.201-102.077,32.201c-7.033,0-13.966-0.422-20.785-1.216   C269.472,427.662,299.361,419.322,323.898,402.906L323.898,402.906z" fill-rule="evenodd"/><path clip-rule="evenodd" d="M276.011,378.289c9.179,12.068,22.291,20.482,38.157,23.483   c-34.098,23.77-81.025,29.453-124.168,11.533c-4.528-1.931-8.953-4.052-13.279-6.338c-45.481-24.74-71.5-71.682-68.608-118.224   c25.549,53.531,82.043,90.75,147.621,90.75C262.602,379.494,269.368,379.082,276.011,378.289L276.011,378.289z" fill-rule="evenodd"/><path clip-rule="evenodd" d="M332.359,229.938c-32.615,12.332-60.578,43.946-68.646,81.56   c-5.135,23.939-1.268,45.911,9.18,62.319c-3.379,0.22-6.787,0.342-10.225,0.342c-72.927,0-133.795-50.275-147.89-117.098   c0.944-2.56,1.982-5.102,3.127-7.622c27.29-60.042,101.928-84.873,166.669-55.447C303.705,202.687,319.832,215.148,332.359,229.938   L332.359,229.938z" fill-rule="evenodd"/><path clip-rule="evenodd" d="M103.536,278.129c-3.398,37.414,10.003,74.916,36.394,102.975   c-35.697-32.535-58.102-79.41-58.102-131.505c0-42.201,14.712-80.966,39.27-111.47c-17.385,24.686-27.534,54.411-27.534,86.397   C93.564,243.368,97.089,261.424,103.536,278.129L103.536,278.129z" fill-rule="evenodd"/><path clip-rule="evenodd" d="M412.148,248.044c-11.26-14.189-28.103-23.068-48.511-23.623   c-1.113-0.031-2.228-0.029-3.341-0.01c-14.266-22.155-35.256-40.742-61.679-52.526c-70.352-31.378-152.613-2.673-183.697,64.099   c-0.889,1.909-1.719,3.829-2.505,5.756c-0.468-4.7-0.715-9.461-0.715-14.281c0-81.006,67.604-146.699,150.967-146.699   c83.363,0,150.967,65.693,150.967,146.699C413.635,234.447,413.12,241.317,412.148,248.044L412.148,248.044z" fill-rule="evenodd"/><path clip-rule="evenodd" d="M319.299,81.925c68.951,24.504,118.342,90.327,118.342,167.673   c0,22.638-4.24,44.284-11.953,64.202c4.592-23.719,0.325-45.382-10.398-61.445c1.715-9.029,2.614-18.329,2.614-27.83   C417.903,160.513,377.262,105.556,319.299,81.925L319.299,81.925z" fill-rule="evenodd"/></g></svg>
+							bld_cishizaka
+						</li>
+						<li>
+							<i class="fab fa-github"></i> /ninetails
+						</li>
+					</ul>
+				</section>
+
+				<section data-background="https://thumbs.gfycat.com/ForkedValuableFlycatcher-size_restricted.gif">
+					<h2>História</h2>
+				</section>
+
+				<section>
+					<section data-markdown>
+						### JavaScript Vanilla
+
+						```js
+						var proximoSlide = document.getElementById('proximo-slide');
+						proximoSlide.innerHTML = "<p>Exemplo de conteúdo dinâmico</p>";
+						```
+					</section>
+
+					<section>
+						<div id="proximo-slide"></div>
+						<script>
+							var proximoSlide = document.getElementById('proximo-slide');
+							proximoSlide.innerHTML = "<p>Exemplo de conteúdo dinâmico</p>";
+						</script>
+					</section>
+				</section>
+
 			</div>
 		</div>
 

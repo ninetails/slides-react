@@ -31,6 +31,23 @@
 		<!-- Custom -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/brands.css" integrity="sha384-VGCZwiSnlHXYDojsRqeMn3IVvdzTx5JEuHgqZ3bYLCLUBV8rvihHApoA1Aso2TZA" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+		<style>
+			html.dimbg .slide-background {
+				opacity: 0.5 !important;
+			}
+
+			.title-logo {
+				background: none !important;
+				border: none !important;
+				box-shadow: none;
+				height: 1em;
+				margin: 0 1em 0 0 !important;
+				vertical-align: bottom;
+				width: 1em;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
@@ -63,30 +80,6 @@
 
 				<section data-background="http://www.deldebbio.com.br/wp-content/uploads/2009/08/moises.jpg">
 					<svg style="float: left; width: 64px; height: 64px;" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 630 630">
-						<!--
-						The MIT License (MIT)
-						
-						Copyright (c) 2011 Christopher Williams <chris@iterativedesigns.com>,
-																 Manuel Strehl <boldewyn@gmail.com>
-						
-						Permission is hereby granted, free of charge, to any person obtaining a copy
-						of this software and associated documentation files (the "Software"), to deal
-						in the Software without restriction, including without limitation the rights
-						to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-						copies of the Software, and to permit persons to whom the Software is
-						furnished to do so, subject to the following conditions:
-						
-						The above copyright notice and this permission notice shall be included in
-						all copies or substantial portions of the Software.
-						
-						THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-						IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-						FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-						AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-						LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-						OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-						THE SOFTWARE.
-						-->
 						<g>
 							<rect x="0" y="0" width="630" height="630" fill="#f7df1e" />
 							<path d="m 165.65,526.47375 48.2125,-29.1775 C 223.16375,513.7875 231.625,527.74 251.92,527.74 c 19.45375,0 31.71875,-7.60975 31.71875,-37.21 l 0,-201.3 59.20375,0 0,202.1375 c 0,61.32 -35.94375,89.23125 -88.385,89.23125 -47.36125,0 -74.8525,-24.52875 -88.8075,-54.13" />
@@ -94,10 +87,10 @@
 						</g>
 					</svg>
 
-					<img style="float: right; margin-left: 50px;" src="https://avatars2.githubusercontent.com/u/313317?s=460&v=4" alt="Image Profile of Brendan Eich on Github">
+					<img style="float: right; margin-left: 50px; filter: grayscale(45%);" src="https://avatars2.githubusercontent.com/u/313317?s=460&amp;v=4" alt="Image Profile of Brendan Eich on Github">
 					<h3>História</h3>
 
-					<p>
+					<p style="margin-right: 11em; font-size: .9em">
 						JavaScript foi originalmente desenvolvido por <strong>Brendan Eich</strong> quando trabalhou na <strong>Netscape</strong> [em 1995] sob o nome de Mocha, posteriormente teve seu nome mudado para LiveScript e por fim JavaScript.
 					</p>
 					<p>
@@ -107,7 +100,7 @@
 					</p>
 				</section>
 
-				<section>
+				<section data-background="https://i.ytimg.com/vi/ZvevSjrJ9ys/maxresdefault.jpg">
 					<section data-markdown>
 						### JavaScript Vanilla
 
@@ -118,11 +111,58 @@
 					</section>
 
 					<section>
-						<div id="proximo-slide"></div>
+						<button style="font-size: 2em;" onClick="document.getElementById('proximo-slide').innerHTML = '<p>Exemplo de conteúdo dinâmico 😃</p>'">Exemplo!</button>
+						<div style="background: rgba(0, 0, 0, 0.2); padding: 3em;" id="proximo-slide">Oi, eu sou um texto estático</div>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3><img class="title-logo" src="data:image/png;base64,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" alt="jQuery logo"> jQuery</h3>
+
+						<pre style="clear: both;"><code class="javascript">
+$("button.jquery").click(function () {
+	$("div.exemplo-jquery").html("Novo conteúdo!")
+})
+						</code></pre>
+					</section>
+
+					<section data-background="http://pa1.narvii.com/6355/f8110e1a7201902aa7f35ae921dca9b38af11b27_00.gif">
+						<button style="font-size: 2em;" class="jquery">Clique aqui!</button>
+						<div style="background: rgba(0, 0, 0, 0.2); padding: 3em;" class="exemplo-jquery">Antigo conteúdo 😞</div>
+
 						<script>
-							var proximoSlide = document.getElementById('proximo-slide');
-							proximoSlide.innerHTML = "<p>Exemplo de conteúdo dinâmico</p>";
+							$("button.jquery").click(function () {
+								$("div.exemplo-jquery").html("Novo conteúdo! 😘")
+							})
 						</script>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="https://cdn57.androidauthority.net/wp-content/uploads/2017/11/Google-search-curved-840x446.png" data-state="dimbg">
+						<h3><img style="max-height: 1em; border: none; background: none; box-shadow: none;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2000px-Google_2015_logo.svg.png" alt="Google"></h3>
+					</section>
+
+					<section data-background="http://blogoscoped.com/files/add-business/userp.jpg" data-state="dimbg">
+						<h3><img style="max-height: 1em; border: none; background: none; box-shadow: none;" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google.png" alt="Google"></h3>
+						<p>
+							<small>
+								2 de setembro de 2008
+							</small>
+						</p>
+					</section>
+
+					<section data-background="http://www.softdownload.com.br/wp-content/uploads/google_chrome1.png" data-state="dimbg">
+						<h3><img class="title-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/64px-Google_Chrome_icon_%28September_2014%29.svg.png" alt="Google Chrome logo"> Google Chrome</h3>
+					</section>
+
+					<section data-background="https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2016/10/google-chrome-v8-javascript-engine.jpg" data-state="dimbg">
+						<h3><img class="title-logo" src="https://developers.google.com/v8/images/logo_v8_192px_clr.png" alt="Google V8 Engine logo">V8 Engine</h3>
+					</section>
+
+					<section data-background="https://community.risingstack.com/content/images/2017/11/nodejs-twitter-bots.png" data-state="dimbg">
+						<h3><img class="title-logo" src="https://nodejs.org/static/images/logo.svg" alt="Node.js logo">Node.js</h3>
 					</section>
 				</section>
 

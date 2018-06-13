@@ -59,28 +59,41 @@
 				vertical-align: bottom;
 				width: auto;
 			}
+
+			@keyframes App-logo-spin {
+				from { transform: rotate(0deg); }
+				to { transform: rotate(360deg); }
+			}
 		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-markdown>
-					# React
-
-					Capa
+				<section>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" style="background: none; border: none; box-shadow: none; animation: App-logo-spin infinite 20s linear;">
 				</section>
 
 				<section>
+					<h2>Disclaimer</h2>
+
+					<p class="fragment">Vou usar fotos estouradas.</p>
+
+					<p class="fragment">Se acostumem.</p>
+
+					<p class="fragment">Não sou designer.</p>
+				</section>
+
+				<section data-background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrWq8nqS_3QM6JbD95hKxF46IVoW2ih06wjez4BtNpdjIB0A17" data-state="dimbg">
 					<h2>Carlos Kazuo</h2>
 
-					<h3>Veneza</h3>
+					<h3 class="fragment">Veneza</h3>
 
 					<ul>
-						<li>
+						<li class="fragment">
 							<svg style="vertical-align: bottom;" enable-background="new 0 0 512 512" height="48px" version="1.1" viewBox="0 0 512 512" width="48px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle cx="255.999" cy="256" r="246.455"/></g><g><circle clip-rule="evenodd" cx="256" cy="256" fill="#FFFFFF" fill-rule="evenodd" r="186.975"/><path clip-rule="evenodd" d="M287.631,372.15c-7.71-14.073-9.873-32.703-4.705-52.966   c8.434-33.083,33.921-60.788,62.387-71.001c16.592,28.224,21.809,61.7,12.577,93.1C338.029,356.988,313.984,367.887,287.631,372.15   L287.631,372.15z" fill-rule="evenodd"/><path clip-rule="evenodd" d="M320.608,396.94c-13.083-2.823-23.606-10.308-30.644-20.919   c24.695-5.074,47.303-15.518,66.416-29.995c-1.154,3.362-2.477,6.696-3.976,9.992C344.952,372.419,333.961,386.185,320.608,396.94   L320.608,396.94z" fill-rule="evenodd"/><path clip-rule="evenodd" d="M379.211,320.704c5.186-26.054,1.937-52.7-8.444-76.683   c16.305,0.615,29.539,7.808,38.317,19.287C403.56,284.689,393.203,304.209,379.211,320.704L379.211,320.704z" fill-rule="evenodd"/><path clip-rule="evenodd" d="M408.647,346.94c-7.903,12.065-17.236,23.112-27.753,32.901   c-15.061,11.844-32.724,18.809-50.014,18.322c-0.105-0.002-0.211-0.009-0.316-0.013c16.42-12.497,30.015-28.856,39.17-48.521   c3.545-7.617,6.27-15.401,8.214-23.262c15.462-16.928,27.139-37.094,33.761-59.294c9.096,14.364,11.973,34.195,6.438,55.901   C416.005,331.379,412.758,339.432,408.647,346.94L408.647,346.94z" fill-rule="evenodd"/><path clip-rule="evenodd" d="M323.898,402.906c0.479,0.021,0.959,0.047,1.441,0.061   c12.391,0.336,24.793-2.436,36.472-7.664c-28.896,20.287-64.097,32.201-102.077,32.201c-7.033,0-13.966-0.422-20.785-1.216   C269.472,427.662,299.361,419.322,323.898,402.906L323.898,402.906z" fill-rule="evenodd"/><path clip-rule="evenodd" d="M276.011,378.289c9.179,12.068,22.291,20.482,38.157,23.483   c-34.098,23.77-81.025,29.453-124.168,11.533c-4.528-1.931-8.953-4.052-13.279-6.338c-45.481-24.74-71.5-71.682-68.608-118.224   c25.549,53.531,82.043,90.75,147.621,90.75C262.602,379.494,269.368,379.082,276.011,378.289L276.011,378.289z" fill-rule="evenodd"/><path clip-rule="evenodd" d="M332.359,229.938c-32.615,12.332-60.578,43.946-68.646,81.56   c-5.135,23.939-1.268,45.911,9.18,62.319c-3.379,0.22-6.787,0.342-10.225,0.342c-72.927,0-133.795-50.275-147.89-117.098   c0.944-2.56,1.982-5.102,3.127-7.622c27.29-60.042,101.928-84.873,166.669-55.447C303.705,202.687,319.832,215.148,332.359,229.938   L332.359,229.938z" fill-rule="evenodd"/><path clip-rule="evenodd" d="M103.536,278.129c-3.398,37.414,10.003,74.916,36.394,102.975   c-35.697-32.535-58.102-79.41-58.102-131.505c0-42.201,14.712-80.966,39.27-111.47c-17.385,24.686-27.534,54.411-27.534,86.397   C93.564,243.368,97.089,261.424,103.536,278.129L103.536,278.129z" fill-rule="evenodd"/><path clip-rule="evenodd" d="M412.148,248.044c-11.26-14.189-28.103-23.068-48.511-23.623   c-1.113-0.031-2.228-0.029-3.341-0.01c-14.266-22.155-35.256-40.742-61.679-52.526c-70.352-31.378-152.613-2.673-183.697,64.099   c-0.889,1.909-1.719,3.829-2.505,5.756c-0.468-4.7-0.715-9.461-0.715-14.281c0-81.006,67.604-146.699,150.967-146.699   c83.363,0,150.967,65.693,150.967,146.699C413.635,234.447,413.12,241.317,412.148,248.044L412.148,248.044z" fill-rule="evenodd"/><path clip-rule="evenodd" d="M319.299,81.925c68.951,24.504,118.342,90.327,118.342,167.673   c0,22.638-4.24,44.284-11.953,64.202c4.592-23.719,0.325-45.382-10.398-61.445c1.715-9.029,2.614-18.329,2.614-27.83   C417.903,160.513,377.262,105.556,319.299,81.925L319.299,81.925z" fill-rule="evenodd"/></g></svg>
 							bld_cishizaka
 						</li>
-						<li>
+						<li class="fragment">
 							<i class="fab fa-github"></i> /ninetails
 						</li>
 					</ul>
@@ -129,7 +142,7 @@
 				</section>
 
 				<section>
-					<section>
+					<section data-background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEjB80SgS-c8C3Oh5axWcLAyg3Ub_LvMMU_sooCwMMKOAx8LiF" data-state="dimbg">
 						<h3><img class="title-logo" src="data:image/png;base64,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" alt="jQuery logo"> jQuery</h3>
 
 						<pre style="clear: both;"><code class="javascript">
@@ -173,30 +186,10 @@ $("button.jquery").click(function () {
 						<h3><img class="title-logo" src="https://developers.google.com/v8/images/logo_v8_192px_clr.png" alt="Google V8 Engine logo">V8 Engine</h3>
 					</section>
 
-					<section data-background="https://community.risingstack.com/content/images/2017/11/nodejs-twitter-bots.png" data-state="dimbg">
+					<section data-background="https://i.imgur.com/VH4pSYx.gif" data-state="dimbg">
 						<h3><img class="title-logo" src="https://nodejs.org/static/images/logo.svg" alt="Node.js logo">Node.js</h3>
 					</section>
 
-					<section data-background="https://static.npmjs.com/338e4905a2684ca96e08c7780fc68412.png" data-state="dimbg">
-						<h3><img class="title-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/2000px-Npm-logo.svg.png" alt="npm logo">npm</h3>
-						
-						<p>
-							Outros package managers:
-						</p>
-
-						<ul>
-							<li>
-								<small>
-									Bower
-								</small>
-							</li>
-							<li>
-								<small>
-									Yarn
-								</small>
-							</li>
-						</ul>
-					</section>
 				</section>
 
 				<section>
@@ -206,47 +199,76 @@ $("button.jquery").click(function () {
 					</section>
 
 					<section data-background="https://www.valuecoders.com/blog/wp-content/uploads/2015/07/angularLogo.png" data-state="dimbg">
-						<h3><img class="title-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/64px-Google_Chrome_icon_%28September_2014%29.svg.png" alt="Angular logo"> Angular</h3>
+						<h3><img class="title-logo" src="https://toddmotto.com/assets/img/categories/angularjs.svg" alt="Angular logo"> Angular</h3>
+
+						<ul>
+							<li class="fragment">Lançado em outubro de 2010</li>
+							<li class="fragment">pelo Google</li>
+							<li class="fragment">MVC &amp; MVVM</li>
+						</ul>
+					</section>
+
+					<section data-background="https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F226910586_1280x720.jpg&src1=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fshare%2Fplay_icon_overlay.png" data-state="dimbg">
+						<h3>Web Components</h3>
+
+						<p>
+							Alex Russell @ Fronteers Conference 2011
+						</p>
+
+						<p>
+							<a href="https://vimeo.com/33430613">https://vimeo.com/33430613</a>
+						</p>
+
+						<p class="fragment">
+							Fundador e presidente da Dojo Foundation
+						</p>
+
+						<img class="fragment" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Dojo_toolkit_logo.svg/200px-Dojo_toolkit_logo.svg.png" alt="Dojo Toolkit Logo" style="clear: both; border: none; box-shadow: none;">
 					</section>
 
 					<section data-background="https://qz.com/wp-content/uploads/2018/03/mark-zuckerberg-ceo-apologize-cambridge-analytica.jpg?quality=80&amp;strip=all&amp;w=3208" data-state="dimbg">
 						<h3><img class="title-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1000px-React-icon.svg.png" alt="React logo"> React</h3>
 
-						<p>
-							Latest: 16
-						</p>
-
-						<p>
-							Componentes
-						</p>
-					</section>
-
-					<section data-background="http://www.softdownload.com.br/wp-content/uploads/google_chrome1.png" data-state="dimbg">
-						<h3><img class="title-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2000px-Angular_full_color_logo.svg.png" alt="Angular logo"> Angular</h3>
-
-						<p>
-							Latest: 6
-						</p>
-
-						<p>
-							Angular 1.x vira AngularJS
-						</p>
-
-						<p>
-							Angular 2+ com Componentes
-						</p>
+						<ul>
+							<li class="fragment">Lançado em março de 2013</li>
+							<li class="fragment">pelo Facebook</li>
+							<li class="fragment">a partir de uma Lib de PHP interna do Facebook</li>
+							<li class="fragment">...Componentes!</li>
+						</ul>
 					</section>
 
 					<section data-background="https://cdn-images-1.medium.com/max/1600/1*MoHYZRrpQcOociJZTo83zg.png" data-state="dimbg">
 						<h3><img class="title-logo" src="https://vuejs.org/images/logo.png" alt="Vue logo"> Vue</h3>
 
-						<p>
-							Latest: 2.5
-						</p>
+						<ul>
+							<li class="fragment">Lançado em fevereiro de 2014</li>
+							<li class="fragment">Componentes</li>
+						</ul>
 
-						<p>
-							Componentes
-						</p>
+						<blockquote class="fragment">
+							"I figured, what if I could just extract the part that I really liked about Angular and build something really lightweight" - Evan You, após trabalhar no Google usando AngularJS
+						</blockquote>
+					</section>
+
+					<section data-background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfHa9EuX6Txri0zP3ba53MVWuQnT9xRqB1cFWubhTgxAxd1GbBMA" data-state="dimbg">
+						<h3><img class="title-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Polymer_Project_logo.png/120px-Polymer_Project_logo.png" alt="Vue logo"> Polymer</h3>
+
+						<ul>
+							<li class="fragment">Lançado em maio de 2015</li>
+							<li class="fragment">Baseado na especificação de Web Components</li>
+						</ul>
+					</section>
+
+					<section data-background="http://www.softdownload.com.br/wp-content/uploads/google_chrome1.png" data-state="dimbg">
+						<h3><img class="title-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2000px-Angular_full_color_logo.svg.png" alt="Angular logo"> Angular</h3>
+
+						<ul>
+							<li class="fragment">Lançado em setembro de 2016</li>
+							<li class="fragment">pelo Google</li>
+							<li class="fragment">Renomearam o antigo Angular para AngularJS</li>
+							<li class="fragment">O novo Angular terá...</li>
+							<li class="fragment">...Componentes!</li>
+						</ul>
 					</section>
 
 				</section>
@@ -269,8 +291,8 @@ $("button.jquery").click(function () {
 						</blockquote>
 
 						<ol>
-							<li>Biblioteca (não framework)</li>
-							<li>Camada de View</li>
+							<li class="fragment">Biblioteca (não framework)</li>
+							<li class="fragment">Camada de View</li>
 						</ol>
 					</section>
 
@@ -290,10 +312,6 @@ $("button.jquery").click(function () {
 						<h2>Problema clássico</h2>
 
 						<img src="https://thenextweb.com/wp-content/blogs.dir/1/files/2012/06/Screen-Shot-2012-06-20-at-2.06.10-PM.jpg" alt="classic facebook problem">
-
-						<p>
-							Resolvido com React + Flux
-						</p>
 					</section>
 
 					<section data-background="https://tommcfarlin.com/wp-content/uploads/2013/08/610x457x2013-08-22-10.39.33-1024x768.png.pagespeed.ic.Ci9Ha4veSo.png" data-state="dimbg">
@@ -335,11 +353,19 @@ $("button.jquery").click(function () {
 				<section data-background="https://previews.123rf.com/images/radiantskies/radiantskies1212/radiantskies121200040/16628014-abstract-word-cloud-for-declarative-programming-with-related-tags-and-terms.jpg" data-state="dimbg">
 					<h3>É declarativo</h3>
 
+					<img src="https://image.slidesharecdn.com/functionalprogrammingprinciplespatterns-170218195441/95/functional-programming-principles-patterns-7-638.jpg?cb=1487447904" alt="Example declarative">
+
 					<p>
 						<small>
 							(<a href="https://en.wikipedia.org/wiki/Declarative_programming">https://en.wikipedia.org/wiki/Declarative_programming</a>)
 						</small>
 					</p>
+				</section>
+
+				<section data-background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLmmwUjUlRQNM6JQpyjEpFFDCbva9YNkxFBsNAtY4huTSE4MxogA" data-state="dimbg">
+					<h3>Virtual DOM</h3>
+
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLmmwUjUlRQNM6JQpyjEpFFDCbva9YNkxFBsNAtY4huTSE4MxogA" alt="Virtual DOM explained" style="height: 10em;">
 				</section>
 
 				<section>
@@ -389,11 +415,182 @@ class HelloMessage extends React.Component {
 
 					</section>
 
+					<section data-background="https://i.stack.imgur.com/6rhk1.png">
+						<h3>Pequeno mão em cima</h3>
+
+<pre style="clear: both;"><code class="javascript">
+class Timer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { seconds: 0 };
+  }
+
+  tick() {
+    this.setState(prevState => ({
+      seconds: prevState.seconds + 1
+    }));
+  }
+
+  componentDidMount() {
+    this.interval = setInterval(() => this.tick(), 1000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
+  render() {
+    return React.createElement(
+      "div",
+      null,
+      "Seconds: ",
+      this.state.seconds
+    );
+  }
+}
+
+ReactDOM.render(React.createElement(Timer, null), document.getElementById('example-react'));
+</code></pre>
+
+					<div id="example-react"></div>
+
+					</section>
+
+				</section>
+
+				<section data-background="https://ihatetomatoes.net/wp-content/uploads/2017/09/04-react-state-vs-react-view-1024x639.jpg" data-state="dimbg">
+					<h3>Stateful</h3>
+
+					<p>
+						Tudo gira em torno do estado da aplicação
+					</p>
+				</section>
+
+				<section data-background="https://cdn-images-1.medium.com/max/2000/1*00F8QCjUhHAXqhnorGZSOg.jpeg" data-state="dimbg">
+
+					<section>
+						<h2>O que o React não é</h2>
+					</section>
+
+					<section>
+						<h3>Framework</h3>
+					</section>
+
+					<section data-background="https://cdn-images-1.medium.com/max/727/1*Rg1_cl2hygucADz93Z-ePQ.jpeg" data-state="dimbg">
+						<h3>Nova linguagem de programação</h3>
+					</section>
+
+					<section>
+						<h3>Framework</h3>
+					</section>
+
+					<section data-background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjdBnUe3bpmDUwd3kCtQcit_hCvNr30DXCr917WeappzT2nt4X" data-state="dimbg">
+						<h3>ReactiveX</h3>
+
+						<p>
+							Programação Reativa com Streams
+						</p>
+					</section>
+
+					<section>
+						<h3>Framework</h3>
+
+						<p class="fragment">...sério.</p>
+					</section>
+
+					<section data-background="https://blog.rapid7.com/content/images/le-img/2016/01/combining-angularJS-and-reactJS-for-better-applications.jpg#img-half-right" data-state="dimbg">
+						<h3>AngularJS &amp; React</h3>
+
+						<p>
+							<a href="http://ngreact.github.io/ngReact/">http://ngreact.github.io/ngReact/</a>
+						</p>
+					</section>
+
+					<section data-background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO7hJCaZpNTJBVl4PVVnqK3rsLPTqlwa6CdXJjO_FthsMIjS55" data-state="dimbg">
+						<h3>VueJS in React, React in Vue</h3>
+
+						<p>
+							<a href="https://github.com/akxcv/vuera">Vuera</a>
+						</p>
+					</section>
+
+					<section>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQgJarzgsU1HgfyQcDRHg3XJO3N-XLKrLIRtr1NbCfVNuN89-S" alt="Seriously?" style="height: 20em;">
+					</section>
+
+				</section>
+
+				<section data-background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE61xPQEztNSOeDeDbnREiab3BtzTTQ0-s6wCt3OdyNV7aMq0kNA" data-state="dimbg">
+
+					<section>
+						<h2>"Learn Once, Write Anywhere"</h2>
+					</section>
+
+					<section data-background="https://blog.instabug.com/wp-content/uploads/2018/03/Featured.jpg" data-state="dimbg">
+						<h3>Mobile</h3>
+					</section>
+
+					<section data-background="https://img.maximummedia.ie/her_ie/eyJkYXRhIjoie1widXJsXCI6XCJodHRwOlxcXC9cXFwvbWVkaWEtaGVyLm1heGltdW1tZWRpYS5pZS5zMy5hbWF6b25hd3MuY29tXFxcL3dwLWNvbnRlbnRcXFwvdXBsb2Fkc1xcXC8yMDE4XFxcLzAzXFxcLzE1MTc0MjQyXFxcL25ldGZsaXgtLTEwMjR4NTM4LmpwZ1wiLFwid2lkdGhcIjo3NjcsXCJoZWlnaHRcIjo0MzEsXCJkZWZhdWx0XCI6XCJodHRwczpcXFwvXFxcL3d3dy5oZXIuaWVcXFwvYXNzZXRzXFxcL2ltYWdlc1xcXC9oZXJcXFwvbm8taW1hZ2UucG5nP3Y9NVwifSIsImhhc2giOiJmMGI4Y2FkMmNiZWRkY2VkN2ZjNzhkOTU5NDI0ZmVjNjdjM2I3N2Q5In0=/netflix-1024x538.jpg" data-state="dimbg">
+						<h3>TV</h3>
+					</section>
+
+					<section data-background="https://i0.wp.com/pbs.twimg.com/media/CnEQfCMW8AAOIY2.jpg?w=840&ssl=1" data-state="dimbg">
+						<h3>IOT</h3>
+
+<pre style="clear: both;"><code class="javascript">
+class Application extends React.Component {
+	render() {
+		return (
+			&lt;Board&gt;
+				&lt;FlashingLed pin={9} /&gt;
+				&lt;FlashingLed pin={10} /&gt;
+				&lt;FlashingLed pin={11} /&gt;
+				&lt;FlashingLed pin={12} /&gt;
+			&lt;/Board&gt;
+		);
+	}
+}
+</code></pre>
+
+					</section>
+
+					<section data-background="http://paperlief.com/images/abstract-art-music-wallpaper-2.jpg" data-state="dimbg">
+						<h3>Música</h3>
+
+<pre style="clear: both;"><code class="html">
+&lt;Song tempo={90}&gt;
+	&lt;Sequencer resolution={16} bars={1}&gt;
+		&lt;Reverb&gt;
+			&lt;Delay&gt;
+				&lt;Monosynth
+					steps={[
+						[0, 4, "c3"],
+						[4, 4, "c4"],
+					]}
+				/&gt;
+			&lt;/Delay&gt;
+		&lt;/Reverb&gt;
+	&lt;/Sequencer&gt;
+&lt;/Song&gt;
+</code></pre>
+
+					</section>
+
+					<section data-background="https://img.devrant.com/devrant/rant/r_786586_RdukX.jpg" data-state="dimbg">
+						<h3>Aplicações Desktop</h3>
+					</section>
+
+					<section>
+						<h3>...</h3>
+					</section>
+
 				</section>
 
 			</div>
 		</div>
 
+		<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+		<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
